@@ -1,0 +1,50 @@
+/* 선택자 (selector): html의 태그를 지정해주는 것*/ /* 설명 0번 */
+
+/* 3번 */
+.blind { /* .은 클래스 */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* 1번 */
+#header-center{ /* 여기서 div는 생략가능! ex) #header-center
+                       단 div만 가능하다. header#mins -> #mins(x) */
+    margin: 0 auto;
+    width: 1190px;
+}
+/*
+    만약 같은 내용의 css 디자인이 들어간다면!
+    div#header-center , div#mins{ ,를 찍고 옆에 적어주면 된다.
+    margin: 0 auto;
+    width: 1130px;
+    }
+*/
+
+/* 2번 */
+#header-search h1 { /* div 내에서 자식(바로안에 들어있는것)을 찾고 싶다면 mins > h1 방식을 사용*/
+    /* 자손 <- 그외 자식, 손자, 증손자 등등 */
+    /* a 태그와 h1 태그 교체이후 설명
+    header-search 바로 직졔 자식은 h1 태그였으나 a태그가 이를 감싸면서 h1태그는
+    자식이 아닌 자손이 되었음! 따라서 ">" 표시을 제거해야함 (자손과 자식의 차이)*/
+    display: inline-block;
+    width: 222px;
+    height: 51px;
+    background: url(./sp_main_153a02.png)  0 -158px no-repeat;
+    background-size: 440px 410px;
+    text-indent: 110%;
+    overflow: hidden; /* 밖으로 나간 친구들 안보이게 ㅋㅋ 꼼수 */
+}
+
+
+/* 4번 */
+
+#header-search fieldset {
+    width: 582px;
+    height: 52px;
+    display: inline-block;
+
+}
