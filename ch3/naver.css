@@ -1,0 +1,113 @@
+
+/* 2번 */
+* { /* * <- 에스터리스크 라고 부르는데 모든 태그에 적용이라는 기능을 가짐*/
+    box-sizing: border-box; /* 모든 태그에 border-box 적용 */
+}
+/* 사용하는 이유 : 전시간에 박스 사이즈가 개 크게 나옴 ㅇㅇ -> 웹에서는 컨텐츠랑 패딩이랑 보더의 넓이를 다 따로 적용하기 때문에
+   그리고 이것을 우리는 컨텐트-박스라고 부른다. 기본적으로 설정이 되있는 것
+   -> 이것이 안좋은 이유는 우리는 보더랑 패딩과 컨텐트 다 합쳐서 521이 되아햐는데 위드는 컨텐트만을 가리키고 있어서 적용이 안됨
+    그래서 우리는 매번 계산을 해야하는 ㅈ같은 상황을 마주함 -> so 합쳐서 위드라고 치도록 바꿔줄 수 있는데 그것이 보더- 박스임*/
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+#header-center{
+
+    margin: 0 auto;
+    width: 1190px;
+}
+
+
+/* 3번 */
+#header-search h1 {
+
+    display: inline-block;
+    width: 222px;
+    height: 51px;
+    background: url(./sp_main_153a02.png)  0 -158px no-repeat;
+    background-size: 440px 410px;
+    text-indent: 110%;
+    overflow: hidden;
+    vertical-align: middle; /* 로고와 검색창의 크기를 맟줌*/
+}
+
+
+
+/* 1번 */ /* 5번*/
+#header-search fieldset {
+    /* 버튼을 원하는 위치에 붙여보자*/
+    position: relative; /* 5번*/
+    margin-left: 20px;
+    width: 582px;
+    height: 56px;
+    display: inline-block;
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    vertical-align: middle; /* 로고와 검색창의 크기를 맞춤*/
+    padding: 13px 15px;
+}
+
+/* 2번 */
+
+#header-search fieldset input { /* 지금 보면 인풋이 표시되는 ㅈ같음을 보실 수 있습니다 ㅎㅎ 이것을 조져서 없애고자 합니다.
+                                따라서 보더를 논으로 설정합니다.*/
+    border: none;
+
+    outline: none; /* css는 외우는 것 */ /*눌럿을때 뭔가 배경같은게 나오는게 아웃라인 더러워 보이니까 논으로 지우자 */
+    width: 444px;
+    height: 24px;
+    margin: 1px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+/* 4번 */ /* 5번*/
+
+#header-search fieldset button { /* 버튼을 디자인 해봅시다.*/
+    /* 버튼을 원하는 위치로 옮기자*/
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    /* 기본 디자인*/
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background: #19ce60;
+}
+
+/* 4-1번*/
+
+/*
+#header-search fieldset button span { !* 다 만들고 나서 이렇게 해도되는데... 근데 너무 길어지자나요,,ㅠㅠ 그래서 id를 따로 줍시다.*!
+    background: url(./sp_main_153a02.png) -204px -386px no-repeat;
+    background-size: 440px 410px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+*/
+
+/* 4-2번 */
+
+#search-image {
+    background: url(./sp_main_153a02.png) -204px -386px no-repeat;
+    background-size: 440px 410px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+
