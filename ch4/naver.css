@@ -1,0 +1,224 @@
+
+/* 0번 지난시간에 과제로 내주었던 포지션 렐러티브랑 엡솔루트 설명*/
+/* exam.css 확인해서 정리하자*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* 1번 */
+/* 이제 nav 또한 중앙에 정렬하기 때문에 재사용의 필요성 -> so 클래스를 사용하자!
+#header-center{
+
+    margin: 0 auto;
+    width: 1190px;
+}
+*/
+
+/* 1-1번 */
+.center-align {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+/* 1-2번 */
+/* id 그대로 하고싶은 경우
+    만약 같은 내용의 css 디자인이 들어간다면!
+    div#header-center , div#mins{ ,를 찍고 옆에 적어주면 된다.
+    margin: 0 auto;
+    width: 1130px;
+    }
+*/
+
+
+#header-search h1 {
+
+    display: inline-block;
+    width: 222px;
+    height: 51px;
+    background: url(./sp_main_153a02.png)  0 -158px no-repeat;
+    background-size: 440px 410px;
+    text-indent: 110%;
+    overflow: hidden;
+    vertical-align: middle; /* 로고와 검색창의 크기를 맟줌*/
+}
+
+
+
+
+#header-search fieldset {
+
+    position: relative;
+    margin-left: 20px;
+    width: 582px;
+    height: 56px;
+    display: inline-block;
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding: 13px 15px;
+}
+
+
+
+#header-search fieldset input {
+    border: none;
+
+    outline: none;
+    width: 444px;
+    height: 24px;
+    margin: 1px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+
+
+#header-search fieldset button {
+
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    /* 기본 디자인*/
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background: #19ce60;
+}
+
+
+#search-image {
+    background: url(./sp_main_153a02.png) -204px -386px no-repeat;
+    background-size: 440px 410px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 2번 */
+nav ul {
+    margin: 0;
+    padding: 0; /* 화면에서 보면 알겠지만 옆으로 마진과 패딩을 쓰고 있기에 이를 없애줌 */
+    list-style: none; /* 옆에 리스트 쩜을 없애줌 */
+}
+
+/* 3번 */
+
+nav li{ /* 목록들 가로정렬 */
+    display: inline-block;
+}
+
+/* 4번 */ /* 월스트 차일드에 대한 설명 */ /* 순서 -> 리스트 안에 첫번째 자식을 찾고 그 안에있는 스펜의 첫번째 자식을 호출*/
+nav li:first-child span:first-child { /* 첫번째 자식에 다시 첫번째 자식을 선택 */
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0; /* 케스케이딩( 덮어 씌우는 것 ) ex. 0으로 고정을 하였으나 뒤에서 14로 덮어 씌울 수 있다.*/
+}
+
+nav li span:first-child {
+    height: 20px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 14px;
+    /* css 우선순위 -> 뒤에 있는 css가 더 우선순위가 높다.*/
+    /* !important > inline style attribute > id > 다른 attribute > tag element 순으로 우선순위가 높다.*/
+    /* https://www.zerocho.com/category/CSS/post/588cb95ca63e64132496a5d5  css 우선순위 싸이트*/
+}
+
+/* 5번 */ /* 그냥 코드를 던져줄 것 ㅇㅇ*/
+
+nav li:nth-child(2) span:first-child { /* 두번째는 세컨드가 아니라 그냥 노스로 통일 마지막은 라스트 */
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+    margin-left: 16px;
+    width: 26px;
+    background-position: -279px -208px;
+}
+
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+    width: 28px;
+    background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child {
+    width: 30px;
+    background-position: -195px -233px;
+}
+
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
+}
+
+/* 더보기랑 날씨는 다음주 ㅎ*/
+/* 그리고 하단에 라이트/ 다크모드 할지 말지 정하기 */
