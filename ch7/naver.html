@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" /> <!-- 위에 로고 ㅎ -->
+    <link rel="stylesheet" href="./naver.css">
+</head>
+<body>
+<header>
+    <div class="center-align">
+        <div id="header-top">
+            <span>네이버를 시작페이지로 ></span>
+            <span>| 쥬니와네이버</span>
+            <span>해피빈</span>
+        </div>
+        <div id="header-search">
+
+            <h1>
+                <a href="https://www.naver.com/" class="blind">네이버</a>
+            </h1>
+
+            <h2 class="blind">검색창</h2>
+            <fieldset>
+                <legend class="blind">검색</legend>
+                <input />
+                <span id="search-keyboard"></span>
+                <span id="search-history"></span>
+                <button>
+                    <span class="blind">검색</span>
+                    <span id="search-image"></span>
+                </button>
+            </fieldset>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="center-align">
+        <ul>
+            <li><a href=""><span></span><span class="blind">메일</span></a></li>
+            <li><a href=""><span></span><span class="blind">카페</span></a></li>
+            <li><a href=""><span></span><span class="blind">블로그</span></a></li>
+            <li><a href=""><span></span><span class="blind">지식인</span></a></li>
+            <li><a href=""><span></span><span class="blind">쇼핑</span></a></li>
+            <li><a href=""><span></span><span class="blind">pay</span></a></li>
+            <li><a href=""><span></span><span class="blind">네이버TV</span></a></li>
+            <li><a href=""><span></span><span class="blind">사전</span></a></li>
+            <li><a href=""><span></span><span class="blind">뉴스</span></a></li>
+            <li><a href=""><span></span><span class="blind">증권</span></a></li>
+            <li><a href=""><span></span><span class="blind">부동산</span></a></li>
+            <li><a href=""><span></span><span class="blind">지도</span></a></li>
+            <li><a href=""><span></span><span class="blind">영화</span></a></li>
+            <li><a href=""><span></span><span class="blind">VIBE</span></a></li>
+            <li><a href=""><span></span><span class="blind">책</span></a></li>
+            <li><a href=""><span></span><span class="blind">웹툰</span></a></li>
+        </ul>
+        <div class="nav-divider"></div>
+        <ul>
+            <li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li> <!-- list item -->
+        </ul>
+    </div>
+</nav>
+<main>
+    <div id="main-center" class="center-align">
+        <div id="main-first-block"> <!--h3들 클레스 빌드 처리 해주기 0번-->
+            <div id="main-ad">
+                <h3 class="blind">메인광고</h3>
+                <span></span> <!-- 이미지용 스펜 1번 메인광고 넣기-->
+            </div>
+            <div id="main-login">
+               <h3 class="blind">로그인</h3>
+                <div class="login-wrapper"> <!-- 로그인 태그를 디자인 할 박스 하나를 만든다. 2번-->
+                    <!-- 여기에는 네이버 안전하게, 로그인, 아이디 비번찾기 등 내용이 들어간다.-->
+                   <p class="login-text">네이버를 더 안전하고 편리하게 이용하세요.</p>
+                   <span class="blind">NAVER 로그인</span> <!-- 중간내용 -->
+                       <div class="login-box">
+                           <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                               <span></span>로그인
+                           </a>
+                       </div>
+                    <div id="last-box"> <!-- 제일 아래 내용-->
+                        <div class="lock-box">아이디 찾기 | 비밀번호 찾기 <a href="" id="sign-up">회원가입</a></div>
+                    </div>
+               </div>
+            </div>
+        </div> <!-- 첫번째 가로로 자른공간-->
+        <div id="main-second-block">
+            <div id="main-bnews">
+                <h3 class="blind">뉴스노출</h3>
+            </div>
+            <div id="main-stock">
+                <h3 class="blind">증권정보</h3>
+            </div>
+        </div> <!-- 두번째 가로로 자른공간-->
+        <div id="main-third-block"> <!-- 세번째 가로로 자른공간-->
+            <div class="inline-block">  <!-- 가로 자르다 실패해서 새로로 자름 왼쪽-->
+                <div id="main-newsstand">
+                    <h3 class="blind">뉴스스텐드</h3>
+                </div>
+                <div id="main-category">
+                    <h3 class="blind">주제별보기</h3>
+                </div>
+            </div>
+            <div class="inline-block"> <!-- 가로 자르다 실패해서 새로로 자름 오른쪽-->
+                <div id="main-second-ad">
+                    <h3 class="blind">두번째광고</h3>
+                    <span></span>
+                </div>
+                <div id="main-shopping"> <!-- 3번 아이프레임 만들기 쇼핑 만든다는 이야기 -->
+                    <h3 class="blind">쇼핑</h3>
+                    <iframe
+                            src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
+                            frameborder="0"
+                            scrolling="no"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
