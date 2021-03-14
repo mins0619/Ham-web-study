@@ -1,0 +1,587 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body, main {
+    margin: 0;
+    padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0; /* 모든 글씨 크기들의 마진을 죽여버린다. */
+}
+.inline-block{
+    display: inline-block;
+}
+.float-left { /* 추가 0번 */
+    float: left;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+
+
+.center-align {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+header{
+    height: 160px;
+    margin-top: 8px;
+}
+
+
+#header-top {
+    float: right;
+    margin-top: 8px;
+    margin-right: 65px;
+}
+
+
+#header-top span {
+
+    letter-spacing: -1px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+
+#header-search {
+    clear: both;
+    padding-top: 12px;
+}
+
+
+#header-search h1 {
+
+    display: inline-block;
+    width: 222px;
+    height: 51px;
+    background: url(./sp_main_153a02.png)  0 -158px no-repeat;
+    background-size: 440px 410px;
+    text-indent: 110%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+
+
+#header-search fieldset {
+
+    position: relative;
+    margin-left: 20px;
+    width: 582px;
+    height: 56px;
+    display: inline-block;
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding: 13px 15px;
+}
+
+
+
+#header-search fieldset input {
+    border: none;
+
+    outline: none;
+    width: 444px;
+    height: 24px;
+    margin: 1px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+
+
+#header-search fieldset button {
+
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    /* 기본 디자인*/
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background: #19ce60;
+}
+
+
+#search-keyboard{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-repeat: no-repeat;
+    background-position: -33px -60px;
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    margin: 0 -1px;
+    vertical-align: middle;
+}
+#search-history{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-repeat: no-repeat;
+    background-position: -87px -60px;
+    width: 9px;
+    height: 4px;
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+
+
+
+#search-image {
+    background: url(./sp_main_153a02.png) -204px -386px no-repeat;
+    background-size: 440px 410px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+nav{
+
+    height: 52px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #d1d8e4;
+    padding: 6px 70px;
+
+}
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+nav li{
+    display: inline-block;
+}
+
+
+nav li:first-child span:first-child {
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0;
+}
+
+nav li span:first-child {
+    height: 20px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+
+}
+
+
+
+nav li:nth-child(2) span:first-child {
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+    width: 26px;
+    background-position: -279px -208px;
+}
+
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+    width: 28px;
+    background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child {
+    width: 30px;
+    background-position: -195px -233px;
+}
+
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
+}
+
+nav li.more:first-child span:first-child {
+    width: 55px;
+    background-position: 0 -104px;
+}
+
+
+.nav-divider{
+    display: inline-block;
+    margin: 18px 10px 0;
+    width: 1px;
+    height: 14px;
+}
+
+main {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 0 auto;
+
+}
+
+
+#main-center{
+    width: 1190px;
+}
+
+
+#main-first-block{
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+#main-ad{
+
+    float: left;
+    width: 750px;
+    height: 135px;
+    background: #555;
+    margin-bottom: 13px;
+    margin-right: 30px;
+    border: 1px solid #dae1e6;
+}
+
+#main-ad span{ /* 1번 메인 베너 넣기 */
+    display: inline-block;
+    background: url(44fb6ad8fb9c782f8df1_20210304111946074.jpg);
+    width: 750px;
+    height: 135px;
+    background-size: cover;
+
+}
+
+#main-login{
+    float: left;
+    width: 350px;
+    height: 135px;
+    vertical-align: top;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+
+}
+
+#main-login .login-wrapper{
+    padding: 4px 16px 12px 17px;
+
+
+}
+
+#main-login .login-box{
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    display: inline-block;
+    width: 315px;
+    height: 48px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+
+
+}
+#main-login .login-box a {
+    text-decoration:none;
+    color: white;
+}
+.login-box span{
+    display: inline-block;
+    width: 60px;
+    height: 12px;
+    background: url(sp_main_153a02.png) -271px -267px no-repeat;
+    background-size: 440px 410px;
+    margin: 2px 5px 0 0;
+
+}
+
+#main-login .login-text {
+    color: #888;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+#last-box {
+    margin: 14px 8px 0 4px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+#sign-up{
+    margin-left: 99px;
+}
+
+
+/*  두번째 구역*/
+
+
+#main-bnews{ /* 연합뉴스 디자인 1번*/
+    float: left;
+    width: 750px;
+    height: 49px;
+    margin-bottom: 13px;
+    margin-right: 30px;
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+    color: #202020;
+
+}
+
+#main-bnews h3 { /* 연합뉴스 디자인*/
+    float: left;
+    font-size: 12px;
+    margin-right: 7px;
+
+}
+
+#main-bnews a{ /* 노출된 뉴스의 디자인 */
+    text-decoration: none;
+    color: #202020;
+    font-size: 12px;
+}
+
+#menu-news { /* 네이버 뉴스 ~ 경제 디자인*/
+    float: right;
+    font-weight: 700;
+    margin: 1px 8px;
+    font-size: 13px;
+}
+
+#menu-news span { /* 네이버 뉴스 파란색 만들어주기 */
+    text-decoration: none;
+    color: #3565c9;
+    margin-right: 4px;
+}
+
+#main-stock{
+    float: left;
+    width: 350px;
+    height: 49px;
+    background: #555;
+
+}
+
+
+
+#main-third-block .inline-block:first-child{
+    width: 750px;
+
+}
+
+#main-third-block .inline-block:last-child{
+    width: 350px;
+    vertical-align: top;
+
+}
+
+/* 왼쪽 세팅*/
+#main-newsstand{
+    float: left;
+    width: 750px;
+    height: 316px;
+    background: white;
+    margin-bottom: 13px;
+
+
+}
+
+#main-newsstand span {
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    vertical-align: top;
+    margin: -6px 1px 0 0;
+
+    /* 뉴스 이미지 잡아주기 */
+    background: url(sp_main_153a02.png) -228px -296px no-repeat;
+    background-size: 440px 410px;
+}
+
+/* 3번 뉴스 목록 디자인 ㅎ*/
+#main-newsstand h3 { /* newsstand 에서 h3가 높이 45를 가져감 */
+
+    height: 56px;
+    border-bottom: 1px solid #ebeef3;
+    padding: 16px 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#main-newsstand a { /* 4-1번 열심히 검은색에 a태그 흔적 지워주기*/
+    text-decoration: none;
+    color: #202020;
+}
+
+/* 4-2번 목록 메뉴 설정 옆으로 보내주기*/
+
+#news-menu{
+    float: right;
+}
+
+#main-newsstand h4 { /* 4-3번 중간 구독한 언론사 옅게 해주기*/
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Malgun Gothic';
+}
+
+/* 3-1 번 */ /* 뉴스의 스타일을 디자인*/
+#main-newsstand ul { /* 개발자 도구를 올려보고 마진 패팅 리스트 스타일이 보여서 지운다.*/
+    display: inline-block; /* 다 만들고 나서 뉴스 목록쪽을 보면 옆이 살짝 비는데 이를 해결하기 위함 */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* 옆에 점이 사라진다. */
+}
+#main-newsstand li { /* 3-2번 리스트들을 옆으로 정리하고 중앙에 보내기*/
+    float: left; /* 리스트들을 옆으로 정렬 */
+    width: calc(100% / 6); /* 보통 6등분을 하고싶은데 계산기를 굴릴순 없으니 이런 식을 쓴다 .*/
+    height: 65px;
+    /* 경계선은 살펴보면 바보도 오른쪽이랑 밑만 넣어주면 되는게 보인다.*/
+    border-left: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+    border-bottom: 1px solid #ebeef3;
+    text-align: center; /* 내부 컨텐츠가 가운데 정렬 자식이 -> 부모에ㅅ게 명령*/
+
+}
+
+#main-newsstand li img { /* 3-3번 뉴스 제대로 위치 잡아주기*/
+    position: relative;
+    top: 50%; /* 부모의 길이로 부터 50% */
+    transform: translateY(-50%); /* 얘를 안해주면 위치가 이상해진다. */
+    /* 부모는 가로 자식은 세로를 맡음 */
+}
+
+
+
+#main-category{
+    float: left;
+    width: 750px;
+    height:  1501px;
+    background: #555;
+    margin-bottom: 13px;
+
+
+}
+
+/* 오른쪽 세팅*/
+#main-second-ad {
+    float: left;
+    width: 350px;
+    height: 200px;
+    background: #555;
+    margin-bottom: 13px;
+    margin-left: 24px;
+}
+
+#main-second-ad span { /* 8번 두번째 메인광고 입장*/
+    background: url("https://ssl.pstatic.net/tveta/libs/1327/1327814/1eaccfa33780d3575556_20210226114602427.jpg");
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;
+}
+
+#main-shopping {
+    float: left;
+    width: 350px;
+    height: 1539px;
+    background: #555;
+    margin-bottom: 13px;
+    margin-left: 24px;
+}
+#main-shopping iframe { /* 9번 쇼핑을 만들어 준다.*/
+    width: 100%;
+    height: 100%;
+}
+
+/* 귀찮으니까 목록 메뉴 설정 숙제로 시키자 ㅎㅎ*/
